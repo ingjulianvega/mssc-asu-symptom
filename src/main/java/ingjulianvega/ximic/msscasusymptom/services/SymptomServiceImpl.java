@@ -29,7 +29,7 @@ public class SymptomServiceImpl implements SymptomService {
         log.debug("get()...");
         return SymptomList
                 .builder()
-                .systemList(symptomMapper.symptomEntityListToSymptomDtoList(symptomRepository.findAll()))
+                .systemList(symptomMapper.symptomEntityListToSymptomDtoList(symptomRepository.findAllByOrderByName()))
                 .build();
     }
 

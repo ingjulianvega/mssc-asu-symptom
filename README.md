@@ -1,6 +1,6 @@
 [![CircleCI](https://circleci.com/gh/ingjulianvega/mssc-asu-symptom.svg?style=svg)](https://circleci.com/gh/ingjulianvega/mssc-asu-symptom)
 
-# ASU evidence type management microservice
+# ASU symptom management microservice
 
 ### BOM
 
