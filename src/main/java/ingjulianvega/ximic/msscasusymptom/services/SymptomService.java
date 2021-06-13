@@ -8,7 +8,7 @@ import ingjulianvega.ximic.msscasusymptom.web.model.SymptomList;
 import java.util.UUID;
 
 public interface SymptomService {
-    SymptomList get();
+    SymptomList get(Boolean usingCache);
 
     SymptomDto getById(UUID id);
 

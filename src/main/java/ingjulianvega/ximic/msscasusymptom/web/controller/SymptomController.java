@@ -21,8 +21,8 @@ public class SymptomController implements SymptomI {
     private final SymptomService symptomService;
 
     @Override
-    public ResponseEntity<SymptomList> get() {
-        return new ResponseEntity<>(symptomService.get(), HttpStatus.OK);
+    public ResponseEntity<SymptomList> get(Boolean usingCache) {
+        return new ResponseEntity<>(symptomService.get(usingCache), HttpStatus.OK);
     }
 
     @Override

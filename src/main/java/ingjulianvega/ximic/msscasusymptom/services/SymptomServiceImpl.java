@@ -23,9 +23,9 @@ public class SymptomServiceImpl implements SymptomService {
     private final SymptomRepository symptomRepository;
     private final SymptomMapper symptomMapper;
 
-    @Cacheable(cacheNames = "symptomListCache")
+    @Cacheable(cacheNames = "symptomListCache", condition = "#usingCache == false")
     @Override
-    public SymptomList get() {
+    public SymptomList get(Boolean usingCache) {
         log.debug("get()...");
         return SymptomList
                 .builder()
